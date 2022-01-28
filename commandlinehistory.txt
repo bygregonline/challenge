@@ -1,0 +1,5 @@
+python3 -m venv venv
+source venv/bin/activate
+pip3 install django
+gh repo create --public bygregonline/challenge
+git remote add origin https://github.com/bygregonline/challenge.git
