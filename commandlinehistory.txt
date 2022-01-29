@@ -3,3 +3,7 @@ source venv/bin/activate
 pip3 install django
 gh repo create --public bygregonline/challenge
 git remote add origin https://github.com/bygregonline/challenge.git
+git branch -u origin/main
+git pull
+django-admin startproject  mainsite
+python3  manage.py startapp deliverect
