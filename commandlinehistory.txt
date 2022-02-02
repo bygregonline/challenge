@@ -7,3 +7,8 @@ git branch -u origin/main
 git pull
 django-admin startproject  mainsite
 python3  manage.py startapp deliverect
+python3  manage.py makemigrations deliverect
+python3  manage.py migrate
+
+python3  manage.py dumpdata deliverect > deliverect/fixtures/data.json
+python3 manage.py loaddata deliverect/fixtures/data.json
