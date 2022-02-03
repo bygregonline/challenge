@@ -18,5 +18,7 @@ WORKDIR /root/challenge/mainsite
 RUN python3  manage.py makemigrations deliverect
 RUN python3  manage.py migrate
 RUN python3  manage.py test
-EXPOSE 8000
+RUN chmod 777 run_gunicorn.sh
+ENTRYPOINT [ "run_gunicorn.sh" ]
+EXPOSE 8888
 
