@@ -3,6 +3,9 @@ from pyvalid import accepts
 import json
 import collections
 import uuid
+from jsonschema import validate
+from pprint import pprint
+import logging
 
 #
 #
@@ -38,6 +41,23 @@ def validate_form(keys:set=None,partial=False ):
                 args.append(data)#add data to args list
                 # print(*args, **kwargs)
                 return func(*args, **kwargs)#return wrapped func(*args, **kwargs)
+        return wrapper
+    return inner_decorator
+
+
+def validate_schema(schema):
+    def inner_decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            try:
+                #print('validate_schema',args[1])
+
+                validate(args[1],schema)
+            except Exception as e:
+                print(e.message)
+                raise Exception('bad json schema') #TODO choose the right exception name latter
+
+            return func(*args, **kwargs)#return wrapped func(*args, **kwargs)
         return wrapper
     return inner_decorator
 

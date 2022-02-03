@@ -1,45 +1,51 @@
 [{
         "model": "deliverect.menu",
-        "pk": 1,
+        "pk": "133f1688-9a3b-4df8-96ce-bf90fcfd8c0f",
+        "fields": {
+            "description": "cheese pizza",
+            "price": 12.47,
+            "quantity": 100,
+            "created_at": "2022-02-03T02:49:15.376"
+        }
+    },
+    {
+        "model": "deliverect.menu",
+        "pk": "74522465-5e05-4dd7-9673-17bd3a71d05c",
+        "fields": {
+            "description": "coke",
+            "price": 2.34,
+            "quantity": 3000,
+            "created_at": "2022-02-03T03:15:02.063"
+        }
+    },
+    {
+        "model": "deliverect.menu",
+        "pk": "84c4519d-e3ef-421a-9915-c9776bd22ecf",
+        "fields": {
+            "description": "beef hash",
+            "price": 22.34,
+            "quantity": 30,
+            "created_at": "2022-02-03T03:14:47.505"
+        }
+    },
+    {
+        "model": "deliverect.menu",
+        "pk": "8cf7d37c-d1dd-4aba-a13c-f0b5f7263818",
+        "fields": {
+            "description": "Tourtière",
+            "price": 12.34,
+            "quantity": 230,
+            "created_at": "2022-02-03T03:14:16.950"
+        }
+    },
+    {
+        "model": "deliverect.menu",
+        "pk": "ad1d401f-ce58-4106-b8ba-924adef436af",
         "fields": {
             "description": "Chicken Pizza",
             "price": 14.4,
             "quantity": 20,
-            "uuid": "ad1d401f-ce58-4106-b8ba-924adef436af",
-            "created_at": "2022-01-31T12:15:12.131"
-        }
-    },
-    {
-        "model": "deliverect.menu",
-        "pk": 2,
-        "fields": {
-            "description": "Coca cola ",
-            "price": 4.34,
-            "quantity": 200,
-            "uuid": "46c2ca38-28bd-4fd1-aff4-1b5cec86019a",
-            "created_at": "2022-01-31T12:15:28.937"
-        }
-    },
-    {
-        "model": "deliverect.menu",
-        "pk": 3,
-        "fields": {
-            "description": "Chocolate cake",
-            "price": 7.45,
-            "quantity": 180,
-            "uuid": "82ec4400-a891-4c2b-89dc-a0162cef67d1",
-            "created_at": "2022-01-31T12:15:55.361"
-        }
-    },
-    {
-        "model": "deliverect.menu",
-        "pk": 4,
-        "fields": {
-            "description": "Fish & chips",
-            "price": 18.34,
-            "quantity": 80,
-            "uuid": "0d0a795a-9eeb-440d-a16f-34bb57cb0298",
-            "created_at": "2022-01-31T12:16:35.494"
+            "created_at": "2022-02-03T12:15:12.131"
         }
     }
 ]

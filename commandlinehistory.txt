@@ -12,3 +12,7 @@ python3  manage.py migrate
 
 python3  manage.py dumpdata deliverect > deliverect/fixtures/data.json
 python3 manage.py loaddata deliverect/fixtures/data.json
+
+
+touch Dockerfile
+docker build -t bygreg/

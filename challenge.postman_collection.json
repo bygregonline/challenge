@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "ced301e7-703f-4886-a97f-3425b5b9d413",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/menu/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_one",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/menu/46c2ca38-28bd-4fd1-aff4-2b5cec86019a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						"46c2ca38-28bd-4fd1-aff4-2b5cec86019a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"order\":[\n      {\n         \"uuid\":\"0d0a795a-9eeb-440d-a16f-34bb57cb0298\",\n         \"quantity\":1\n      },\n      {\n         \"uuid\":\"46c2ca38-28bd-4fd1-aff4-1b5cec86019a\",\n         \"quantity\":90\n      },\n      {\n         \"uuid\":\"0d0a795a-9eeb-440d-a16f-34bb57cb0298\",\n         \"quantity\":9\n      },\n      {\n         \"uuid\":\"0d0a795a-9eeb-440d-a16f-34bb57cb0298\",\n         \"quantity\":30\n      }\n   ],\n   \"info\":{\n      \"note\":\"Not empty\",\n      \"payment\":1124.20\n   }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\":100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/menu/133f1688-9a3b-4df8-96ce-bf90fcfd8c0f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						"133f1688-9a3b-4df8-96ce-bf90fcfd8c0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order\": [\n        {\n            \"uuid\": \"133f1688-9a3b-4df8-96ce-bf90fcfd8c0f\",\n            \"quantity\": 13\n        }\n    ],\n    \"info\": {\n        \"note\": \"bla bla\",\n        \"payment\": 162.11\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new menu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"price\":2.34,\n        \"description\":\"coke\",\n        \"quantity\":3000\n        \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/menu/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_menu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/menu/0d0a795a-9eeb-440d-a16f-34bb57cb0298",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"menu",
+						"0d0a795a-9eeb-440d-a16f-34bb57cb0298"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order/4a8789ad-89a7-4131-b0f7-d4168250c390",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"4a8789ad-89a7-4131-b0f7-d4168250c390"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
