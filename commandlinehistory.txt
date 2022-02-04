@@ -15,4 +15,7 @@ python3 manage.py loaddata deliverect/fixtures/data.json
 pip3 freeze>requirements.txt
 
 touch Dockerfile
-docker build -t bygreg/
+docker build -t bygreg/deliverect:v1
+
+docker run -d -p 8000:8888 bygreg/deliverect:v1
+
