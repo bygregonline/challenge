@@ -19,6 +19,5 @@ RUN python3  manage.py makemigrations deliverect
 RUN python3  manage.py migrate
 RUN python3  manage.py test
 RUN chmod 777 run_gunicorn.sh
-ENTRYPOINT [ "run_gunicorn.sh" ]
 EXPOSE 8888
-
+ENTRYPOINT [ "/root/challenge/mainsite/run_gunicorn.sh" ]
