@@ -20,4 +20,4 @@ RUN python3  manage.py migrate
 RUN python3  manage.py test
 RUN chmod 777 run_gunicorn.sh
 EXPOSE 8888
-ENTRYPOINT [ "/root/challenge/mainsite/run_gunicorn.sh" ]
+CMD ["/bin/bash","/root/challenge/mainsite/run_gunicorn.sh"]
